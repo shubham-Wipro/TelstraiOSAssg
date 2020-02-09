@@ -1,0 +1,6 @@
+framework module Pods_TelstraPOC {
+  umbrella header "Pods-TelstraPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -35,7 +35,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         self.view.addSubview(tableView)
         self.tableView.addSubview(refreshView)
         
-        
         //Add activity Indicator
         activityIndicator = UIActivityIndicatorView()
         activityIndicator.color = UIColor.red
