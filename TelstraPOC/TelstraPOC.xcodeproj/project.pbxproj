@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52FAE0CD23F014A80074C4CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE0CC23F014A80074C4CF /* AppDelegate.swift */; };
-		52FAE0CF23F014A80074C4CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE0CE23F014A80074C4CF /* SceneDelegate.swift */; };
 		52FAE0D123F014A80074C4CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE0D023F014A80074C4CF /* ViewController.swift */; };
-		52FAE0D423F014A80074C4CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE0D223F014A80074C4CF /* Main.storyboard */; };
 		52FAE0D623F014AB0074C4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE0D523F014AB0074C4CF /* Assets.xcassets */; };
 		52FAE0D923F014AB0074C4CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FAE0D723F014AB0074C4CF /* LaunchScreen.storyboard */; };
 		52FAE0E423F014AB0074C4CF /* TelstraPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE0E323F014AB0074C4CF /* TelstraPOCTests.swift */; };
@@ -29,9 +27,7 @@
 /* Begin PBXFileReference section */
 		52FAE0C923F014A80074C4CF /* TelstraPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelstraPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FAE0CC23F014A80074C4CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52FAE0CE23F014A80074C4CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52FAE0D023F014A80074C4CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52FAE0D323F014A80074C4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52FAE0D523F014AB0074C4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52FAE0D823F014AB0074C4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52FAE0DA23F014AB0074C4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,9 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				52FAE0CC23F014A80074C4CF /* AppDelegate.swift */,
-				52FAE0CE23F014A80074C4CF /* SceneDelegate.swift */,
 				52FAE0D023F014A80074C4CF /* ViewController.swift */,
-				52FAE0D223F014A80074C4CF /* Main.storyboard */,
 				52FAE0D523F014AB0074C4CF /* Assets.xcassets */,
 				52FAE0D723F014AB0074C4CF /* LaunchScreen.storyboard */,
 				52FAE0DA23F014AB0074C4CF /* Info.plist */,
@@ -182,7 +176,6 @@
 			files = (
 				52FAE0D923F014AB0074C4CF /* LaunchScreen.storyboard in Resources */,
 				52FAE0D623F014AB0074C4CF /* Assets.xcassets in Resources */,
-				52FAE0D423F014A80074C4CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +195,6 @@
 			files = (
 				52FAE0D123F014A80074C4CF /* ViewController.swift in Sources */,
 				52FAE0CD23F014A80074C4CF /* AppDelegate.swift in Sources */,
-				52FAE0CF23F014A80074C4CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +217,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		52FAE0D223F014A80074C4CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52FAE0D323F014A80074C4CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52FAE0D723F014AB0074C4CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D23VUK52AN;
 				INFOPLIST_FILE = TelstraPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D23VUK52AN;
 				INFOPLIST_FILE = TelstraPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
