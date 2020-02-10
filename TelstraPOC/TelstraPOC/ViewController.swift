@@ -47,6 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         activityIndicator.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()
+        //TODO: To be Stop when data is loaded
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         self.tableView.addSubview(activityIndicator)
         activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

@@ -110,18 +110,14 @@
 		52FAE0CB23F014A80074C4CF /* TelstraPOC */ = {
 			isa = PBXGroup;
 			children = (
-				52FAE0F823F02E3F0074C4CF /* ParsingHelper.swift */,
+				52FAE0FF23F117AF0074C4CF /* Network */,
+				52FAE0FE23F117700074C4CF /* HelpingClasses */,
 				52FAE0CC23F014A80074C4CF /* AppDelegate.swift */,
 				52FAE0D023F014A80074C4CF /* ViewController.swift */,
+				52FAE0F023F01A560074C4CF /* DataTableViewCell.swift */,
 				52FAE0D523F014AB0074C4CF /* Assets.xcassets */,
 				52FAE0D723F014AB0074C4CF /* LaunchScreen.storyboard */,
 				52FAE0DA23F014AB0074C4CF /* Info.plist */,
-				52FAE0F023F01A560074C4CF /* DataTableViewCell.swift */,
-				52FAE0F223F01FED0074C4CF /* jsonModel.swift */,
-				52FAE0F423F024170074C4CF /* Constants.swift */,
-				52FAE0F623F02B790074C4CF /* NetworkManager.swift */,
-				52FAE0FA23F02EC60074C4CF /* ErrorHandler.swift */,
-				52FAE0FC23F03C010074C4CF /* CallAPI.swift */,
 			);
 			path = TelstraPOC;
 			sourceTree = "<group>";
@@ -133,6 +129,26 @@
 				52FAE0E523F014AB0074C4CF /* Info.plist */,
 			);
 			path = TelstraPOCTests;
+			sourceTree = "<group>";
+		};
+		52FAE0FE23F117700074C4CF /* HelpingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE0F423F024170074C4CF /* Constants.swift */,
+				52FAE0F223F01FED0074C4CF /* jsonModel.swift */,
+				52FAE0FA23F02EC60074C4CF /* ErrorHandler.swift */,
+				52FAE0F823F02E3F0074C4CF /* ParsingHelper.swift */,
+			);
+			path = HelpingClasses;
+			sourceTree = "<group>";
+		};
+		52FAE0FF23F117AF0074C4CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52FAE0FC23F03C010074C4CF /* CallAPI.swift */,
+				52FAE0F623F02B790074C4CF /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		85C8D9D0ADA6780CDB812992 /* Pods */ = {
