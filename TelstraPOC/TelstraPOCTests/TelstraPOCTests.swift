@@ -10,25 +10,30 @@ import XCTest
 @testable import TelstraPOC
 
 class TelstraPOCTests: XCTestCase {
+    
+    var mainController: ViewController!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+            mainController = ViewController()
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testMainView() {
+        XCTAssertNotNil(mainController.view,"Main View not created")
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testAPIResponse(){
+        NetworkManager.defaultManager.fetchDataFrom(Constants.default_URL) { (data, response, error) in
+            XCTAssertEqual(200, response?.statusCode, "Satus Code:: \(String(describing: response?.statusCode))")
         }
+    }
+        
+    func testTableViewIsCreated(){
+        let subViews = mainController.view.subviews
+        XCTAssertTrue(subViews.contains(mainController.tableView),"TableView not created")
+    }
+    
+    override func tearDown() {
+            mainController = nil
     }
 
 }
