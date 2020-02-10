@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DataTableViewCell: UITableViewCell {
 
@@ -39,7 +40,7 @@ class DataTableViewCell: UITableViewCell {
         contentView.addSubview(title_Data)
         contentView.addSubview(desc_Data)
            
-            //Sett Constraints
+        //Sett Constraints
         title_Data.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5).isActive = true
         title_Data.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5).isActive = true
         title_Data.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
@@ -58,5 +59,15 @@ class DataTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func updateTableViewData(rowItems: dataRows){
+        self.title_Data.text = rowItems.title ?? ""
+        self.desc_Data.text = rowItems.description ?? ""
+        let image = UIImage(named: "default")
+        if rowItems.imageHref != nil{
+            let imageDownloadUrl = URL(string: rowItems.imageHref!)
+            self.image_Data.sd_setImage(with: imageDownloadUrl, placeholderImage: image, options: [], progress: nil, completed: nil)
+        }
     }
 }
